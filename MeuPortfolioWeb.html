@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="programming.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Meu Portfolio</h5>
+            <div>
+                <h4><span>Olá</span>, me chamo</h4>
+                <h2>Pedro Luiz!</h2>
+                <h4>Sou estudante de ciências da computação</h4>
+                <p> Comecei a estudar computação em 2017 na Universidade Federal de Mato Grosso, apenas segui o que achei que queria. Hoje estou no 7º semestre
+                    e continuo a aprender. Recentemente comecei a estudar novas linguagens por fora do curso, para aperfeiçoar
+                    ainda mais meu aprendizado e proporcionar uma carreira mais promissora.
+                </p>
+                <a href="#" class="btn">Sobre Mim</a>
+            </div>
+            <ul class="sci">
+                <li><a href='https://github.com/PedroQuanz'><img src="github.png"></a></li>
+                <li><a href='https://www.linkedin.com/in/pedro-luiz-quanz-7b01b31a2/'><img src="linkedin.png"></a></li>
+            </ul> 
+        </div>
+
+    </section> 
+    
+    <section class="Experiencias" id="Experiencias">
+        <div class="titulo branco">
+            <h2>Experiencias</h2>
+            <p>2020 - Atualmente</p>
+        </div>
+        <div class="conteudo">
+            <div class="texto">
+                <p>Atualmente sou estagiário na Prefeitura Municipal de Cuiabá, atuando como suporte administrativo na Secretaria Municipal de Meio Ambiente e Desenvolvimento Urbano, responsável por auxiliar na gestão de estagiários e contratação dos mesmos
+                     (Pontos manuais, férias e rescisões); Serviços externos e internos com processos administrativos.</p>
+                <p>
+                    Recentemente comecei a estudar HTML, CSS e Javascript através de cursos na internet (Rocketseat launchbase 3.0).
+                </p>     
+            </div>
+        </div>
+    </section>
+
+    <section class="Habilidades" id="Habilidades">
+        <div class="titulo">
+            <h2>Habilidades</h2>
+            <p>Minhas competências
+            </p>
+        </div>
+        <div class="conteudo">
+            <div class="habilidadesBx">
+                <h2>Programação</h2>
+                <p> Possuo conhecimento acadêmico das linguagens: 
+                    C, PYTHON, SQL(Através da plataforma pgAdmin 4);
+                </p>
+                <p>Também possuo conhecimento básico das linguagens:
+                    HTML, CSS e Javascript.
+                </p>
+                <h2>Habilidades Gerais</h2>
+                <p>	Responsável, organizado no ambiente de trabalho, boa dinâmica 
+                    interpessoal, com iniciativa para cumprimento de atividades. 
+                    Habilidades para lidar com pessoas e trabalhar em equipe.
+                </p>
+                <p>Tenho conhecimento avançado em inglês : leitura, escrita e conversa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contatos" id="Contatos">
+        <div class="titulo branco">
+            <h2>Contate-me!</h2>
+            <p>
+            </p>
+        </div>
+        <div class="FormaDeContato">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="Nome">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="Numero de Celular">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Email">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col100">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+    </section>
+
+
+    <div class="copyright">
+        <p>Copyright 2021 Online Tutorials. All Right Reserved.</p>
+    </div>
+
+
+    <div class ="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Início</a></li>
+            <li><a href="#Experiencias"onclick="toggleMenu();">Experiencias</a></li>
+            <li><a href="#Habilidades" onclick="toggleMenu()";>Habilidades</a></li>
+            <li><a href="#Contatos" onclick="toggleMenu();">Contatos</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>    
+</html>
+
+
